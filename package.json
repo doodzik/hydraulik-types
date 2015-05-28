@@ -1,0 +1,19 @@
+{
+  "name": "hydraulik-types",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doodzik/hydraulik-types.git"
+  },
+  "author": "Frederik Dudzik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doodzik/hydraulik-types/issues"
+  },
+  "homepage": "https://github.com/doodzik/hydraulik-types"
+}
