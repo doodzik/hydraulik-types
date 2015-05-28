@@ -2,9 +2,11 @@
   "name": "hydraulik-types",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/types.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "prepublish": "gulp build",
+    "postpublish": "gulp tag"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,34 @@
   "bugs": {
     "url": "https://github.com/doodzik/hydraulik-types/issues"
   },
-  "homepage": "https://github.com/doodzik/hydraulik-types"
+  "homepage": "https://github.com/doodzik/hydraulik-types",
+  "devDependencies": {
+    "babel-core": "^5.4.7",
+    "coffee-script": "^1.9.2",
+    "del": "^1.2.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "gulp-exec": "^2.1.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.4",
+    "jest-cli": "^0.4.5",
+    "jshint": "^2.7.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "testFileExtensions": [
+      "es6",
+      "js",
+      "jsx"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "es6",
+      "jsx"
+    ],
+    "unmockedModulePathPatterns": [
+      "./node_modules"
+    ]
+  }
 }
