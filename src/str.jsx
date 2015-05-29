@@ -1,9 +1,9 @@
 import Type from './type'
 
 export default class Str extends Type {
-  constructor(value, options = {}){
-    super(value, options)
-    this.length = value.length
+  constructor(...args){
+    super(...args)
+    this.length = this.value.length
     this.min = 1
     this.max = 128
   }

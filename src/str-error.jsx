@@ -1,9 +1,9 @@
 import Type from './type'
 
 export default class StrError extends Type {
-  constructor(value, options = {}){
-    super(value, options)
-    this.length = value.length
+  constructor(...args){
+    super(...args)
+    this.length = this.value.length
   }
 
   validation(){

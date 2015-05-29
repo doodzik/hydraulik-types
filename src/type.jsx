@@ -22,7 +22,7 @@ class BaseType {
   }
 
   isValid(){
-    return this.validate().length == 0
+    return this.validate().length === 0
   }
 
   getName() {
@@ -31,10 +31,6 @@ class BaseType {
 }
 
 export default class Type extends BaseType {
-  constructor(value, options = {}){
-    super(value, options)
-  }
-
   validationWithoutSuper(){
     var _this         = this.constructor
     var _super        = Object.getPrototypeOf(_this)

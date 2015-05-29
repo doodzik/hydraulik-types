@@ -4,5 +4,3 @@
 init
 
     moved code from hydraulik
-
-##
