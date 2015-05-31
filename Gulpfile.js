@@ -10,7 +10,7 @@ const babel       = require('gulp-babel')
 // gulp build -> compile coffee script
 gulp.task('build', ['clean'], function() {
   return gulp
-    .src('src/**/*.jsx')
+    .src(['src/**/*.jsx', '!src/**/__tests__/*'])
     .pipe(sourcemaps.init())
     .pipe(babel())
     .pipe(sourcemaps.write('.'))
