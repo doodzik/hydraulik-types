@@ -1,7 +1,7 @@
-jest.dontMock('../str-error')
+jest.dontMock('../error')
 jest.dontMock('../type')
 
-var StrError = require('../str-error')
+var StrError = require('../error')
 
 describe('string', function() {
   it('#validate return no error', function() {
@@ -9,6 +9,6 @@ describe('string', function() {
   })
 
   it('#validate returns error', function() {
-    expect(new StrError('a').validate()).toEqual('StrError: value should be of length 0')
+    expect(new StrError('a').validate()).toEqual('Error: value should be of length 0')
   })
 })
