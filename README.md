@@ -50,7 +50,7 @@ empty strinsg is accepted
 import Str, { max } from 'hydraulik-types/str'
 
 @max(140)
-export default class Tweet extends Str {
+class Tweet extends Str {
   constructor(...args){
     super(...args) // mandatory
     // access to options object through this.options
