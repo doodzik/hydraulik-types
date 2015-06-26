@@ -1,3 +1,3 @@
-export var Str       = require('./str')
-export var Error  = require('./error')
-export var Type      = require('./type')
+export * from './str'
+export * from './error'
+export * from './type'
