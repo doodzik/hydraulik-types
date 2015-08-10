@@ -3,7 +3,7 @@
 `$ npm i hydraulik-types --save`
 
 ```es6
-import { Str, Error, Type } from 'hydraulik-types'
+import Str from 'hydraulik-types/lib/str'
 
 // Type values shouldn't be reasigned.
 new Str('hello world').validate
@@ -34,11 +34,15 @@ holds the tests.
 
 any value is accepted
 
-### String
+### String - Str
 
 anything that listens to toString is accepted
 @min and @max decorators available for defining custom Types.
 This is used to validate the string length.
+
+### Boolean - Bool
+
+Just True and False
 
 ### Error
 
@@ -47,7 +51,7 @@ empty strinsg is accepted
 ## Custom Types
 
 ```es6
-import Str, { max } from 'hydraulik-types/str'
+import Str, { max } from 'hydraulik-types/lib/str'
 
 @max(140)
 class Tweet extends Str {
